@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./css/quiz.css">
+</head>
+
+<body>
+    <!-- first slide that will only include start button -->
+    <div class="start_btn"><button>Start Quiz</button></div>
+
+    <!-- second slide that will contain the rules -->
+    <div class="info_box">
+        <div class="info-title"><span>Coding Quiz Challenge!</span></div>
+        <div class="info-list">
+            <div class="info">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score. Good luck!</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!-- the quiz will be displayed here -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Quiz</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left:</div>
+                <div class="timer_sec">30</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        
+        <section>
+            <!-- questions display -->
+            <div class="que_text">
+            </div>
+            <!-- options display -->
+            <div class="option_list">
+            </div>
+        </section>
+
+        <!-- bottom of the quiz -->
+        <footer>
+            <button class="next_btn">Next</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="complete_text">All Done!</div>
+        <!-- final score display -->
+        <div class="score_text"></div>
+        <div class="buttons">
+            <button class="restart">Replay</button>
+            <button class="quit">Quit</button>
+        </div>
+    </div>
+
+
+<script src="js/questions.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
+</html>
